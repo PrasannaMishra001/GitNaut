@@ -1,26 +1,13 @@
-# 🚀 GitNaut x Portfolio
-
-![GitNaut Logo](public/logo.png)
+# GitNaut x Portfolio   <img width="50" height="40" alt="logo" src="https://github.com/user-attachments/assets/3e994e82-d9de-4e10-b25c-15be74949fdf" />
 
 GitNaut is a terminal-first GitHub intelligence desk for fast repo insights, designed and maintained by **Prasanna Mishra** (`PrasannaMishra001`).
 
-## 🎥 Demo Videos
+## 🎥 Demo Video
 
-0.
 
-<video src="public/0.mp4" controls muted playsinline width="100%"></video>
+https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 
-1.
-
-![Clip 1](public/1.png)
-
-2.
-
-![Clip 2](public/2.png)
-
-3.
-
-![Clip 3](public/3.png)
+<img width="1912" height="814" alt="Screenshot 2026-02-07 174233" src="https://github.com/user-attachments/assets/d43605c7-2c33-4d37-a26e-4f4c2ea7ddcd" />
 
 ## 👋 About Prasanna
 
