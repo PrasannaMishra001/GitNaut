@@ -2,8 +2,7 @@
 
 GitNaut is a terminal-first GitHub intelligence desk for fast repo insights, designed and maintained by **Prasanna Mishra** (`PrasannaMishra001`).
 
-## 🎥 Demo Video
-
+## Demo Video
 
 https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 
@@ -16,7 +15,7 @@ https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 - Currently learning **Machine Learning & Deep Learning** with practical projects
 - 📫 Reach me at: **prasanna.iiitm@gmail.com**
 
-## ⚡ What GitNaut Does
+## What GitNaut Does
 
 - Repo summaries, language breakdowns, and quick stats
 - Contributor and activity snapshots
@@ -24,14 +23,14 @@ https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 - File tree inspection and file previews
 - Terminal UX with history, autocomplete, and themes
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - **Frontend**: React, TypeScript, Vite
 - **Backend**: Node.js, Express
 - **Styling**: Tailwind CSS
 - **APIs**: GitHub REST API
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 git clone https://github.com/PrasannaMishra001/gitnaut.git
@@ -45,7 +44,7 @@ npm run dev:all
 
 Open `http://localhost:5173` (Vite will pick the next port if 5173 is busy).
 
-## 🔐 GitHub Token (Local Only)
+## GitHub Token (Local Only)
 
 To avoid GitHub API rate limits, copy [server/.env.example](server/.env.example) to `server/.env` and add:
 
@@ -55,7 +54,7 @@ GITHUB_TOKEN=your_token_here
 
 `server/.env` is ignored by git.
 
-## 🧭 Local Env Setup
+## Local Env Setup
 
 ### Backend (.env)
 
@@ -79,7 +78,11 @@ VITE_API_BASE=https://your-backend-url
 
 When using `npm run dev:all`, Vite proxies `/api` to `http://localhost:4000` via [vite.config.ts](vite.config.ts).
 
-## ⌨️ Commands
+## Docs
+
+- PR analysis: [docs/pr-analysis.md](docs/pr-analysis.md)
+
+## Commands
 
 | Command | Description | Example |
 | --- | --- | --- |
@@ -102,7 +105,7 @@ When using `npm run dev:all`, Vite proxies `/api` to `http://localhost:4000` via
 | `logout` / `exit` | Exit terminal | `logout` |
 | `gitnaut pr-analysis` | PR analysis + graph | `gitnaut pr-analysis owner/repo --focus user` |
 
-## 🔗 Links
+## Links
 
 - GitHub: https://github.com/PrasannaMishra001
 - LeetCode: https://leetcode.com/u/Prasanna_Mishra/
@@ -111,15 +114,11 @@ When using `npm run dev:all`, Vite proxies `/api` to `http://localhost:4000` via
 - Medium: https://medium.com/@mishra.prasanna838
 - X: https://x.com/mishra_discover
 
-## 🖼️ Screenshots
+## Screenshots
 
 ![Screenshot 1](public/1.png)
 ![Screenshot 2](public/2.png)
 ![Screenshot 3](public/3.png)
-
-## 📚 Docs
-
-- PR analysis: [docs/pr-analysis.md](docs/pr-analysis.md)
 
 ## 📜 License
 
