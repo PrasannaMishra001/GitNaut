@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="GitNaut terminal logo">
+  <rect width="256" height="256" rx="36" fill="#E0F2FE" />
+  <rect x="24" y="40" width="208" height="160" rx="16" fill="#0A2540" stroke="#1E90FF" stroke-width="8" />
+  <rect x="24" y="40" width="208" height="32" rx="16" fill="#1E90FF" />
+  <circle cx="52" cy="56" r="6" fill="#E0F2FE" />
+  <circle cx="72" cy="56" r="6" fill="#E0F2FE" />
+  <circle cx="92" cy="56" r="6" fill="#E0F2FE" />
+  <polyline points="64,128 88,144 64,160" fill="none" stroke="#1E90FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="104" y="150" width="56" height="10" rx="5" fill="#2DD4BF" />
+</svg>
