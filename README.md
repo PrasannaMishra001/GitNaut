@@ -1,6 +1,10 @@
 # GitNaut x Portfolio   <img width="50" height="40" alt="logo" src="https://github.com/user-attachments/assets/3e994e82-d9de-4e10-b25c-15be74949fdf" />
 
-GitNaut is a terminal-first GitHub intelligence desk for fast repo insights, designed and maintained by **Prasanna Mishra** (`PrasannaMishra001`).
+**Live:** [git-naut.vercel.app](https://git-naut.vercel.app) &nbsp;|&nbsp; **Portfolio:** [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/)
+
+GitNaut is a terminal-first GitHub intelligence desk for fast repo insights — type commands, explore any public repository without leaving the keyboard. Built and maintained by **[Prasanna Mishra](https://prasannamishra001.github.io/prasannamishra/)** (`PrasannaMishra001`), open-source contributor at omegaUp and Research Intern at ABV-IIITM Gwalior.
+
+It acts as a developer dashboard in a terminal skin: pull up repo stats, inspect language breakdowns, visualise PR activity with SVG charts, browse the file tree, and read raw files — all through a command-line interface running in the browser. No login required; just type a GitHub owner/repo and hit Enter.
 
 ## Demo Video
 
@@ -10,10 +14,12 @@ https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 
 ## 👋 About Prasanna
 
-- Contributor to [omegaup](https://github.com/omegaup/omegaup)
-- Focused on **problem solving**, **backend-heavy systems**, and **applied ML**
-- Currently learning **Machine Learning & Deep Learning** with practical projects
-- 📫 Reach me at: **prasanna.iiitm@gmail.com**
+- 21 merged PRs at [omegaUp](https://github.com/omegaup/omegaup) (Vue 2 · TypeScript · PHP 8.1 · MySQL · Docker)
+- Research Intern under Dr. Roshni Chakraborty, ABV-IIITM Gwalior — stock prediction from StockTwits social data
+- Knight on LeetCode (rating 1858) · 500+ problems solved
+- Focused on **open-source**, **backend systems**, and **applied ML**
+- 🌐 Portfolio: [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/)
+- 📫 Reach me at: **mishra.prasanna838@gmail.com**
 
 ## What GitNaut Does
 
