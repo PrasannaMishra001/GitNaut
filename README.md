@@ -1,6 +1,6 @@
 # GitNaut x Portfolio   <img width="50" height="40" alt="logo" src="https://github.com/user-attachments/assets/3e994e82-d9de-4e10-b25c-15be74949fdf" />
 
-**Live:** [git-naut.vercel.app](https://git-naut.vercel.app) &nbsp;|&nbsp; **Portfolio:** [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/)
+**Live:** [git-naut.vercel.app](https://git-naut.vercel.app) &nbsp;|&nbsp; **Portfolio:** [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/) &nbsp;|&nbsp; **Resume:** [View PDF](https://drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3/view?usp=sharing)
 
 GitNaut is a terminal-first GitHub intelligence desk for fast repo insights — type commands, explore any public repository without leaving the keyboard. Built and maintained by **[Prasanna Mishra](https://prasannamishra001.github.io/prasannamishra/)** (`PrasannaMishra001`), open-source contributor at omegaUp and Research Intern at ABV-IIITM Gwalior.
 
@@ -19,7 +19,8 @@ https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 - Knight on LeetCode (rating 1858) · 500+ problems solved
 - Focused on **open-source**, **backend systems**, and **applied ML**
 - 🌐 Portfolio: [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/)
-- 📫 Reach me at: **mishra.prasanna838@gmail.com**
+- � Resume: [drive.google.com/…](https://drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3/view?usp=sharing)
+- �📫 Reach me at: **mishra.prasanna838@gmail.com**
 
 ## What GitNaut Does
 

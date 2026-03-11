@@ -125,7 +125,11 @@ export const WhoAmI: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Book className="text-terminal-accent" size={16} />
-                <span className="text-terminal-text text-sm">Portfolio: git-naut.vercel.app</span>
+                <span className="text-terminal-text text-sm">Portfolio: prasannamishra001.github.io/prasannamishra</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Book className="text-terminal-accent" size={16} />
+                <span className="text-terminal-text text-sm">Resume: drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Book className="text-terminal-accent" size={16} />
