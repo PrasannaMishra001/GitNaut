@@ -24,168 +24,155 @@ export const projects: Project[] = [
     id: 'gitnaut',
     name: 'GitNaut',
     description: 'Terminal-style GitHub intelligence and contributor analytics',
-    technologies: ['React', 'TypeScript', 'Node.js', 'GitHub API', 'Vite'],
-    github: 'https://github.com/PrasannaMishra001/gitnaut',
-    demo: 'https://gitnaut.vercel.app',
-    image: 'https://images.pexels.com/photos/11035545/pexels-photo-11035545.jpeg',
-    details: `GitNaut is a terminal-first GitHub analytics cockpit that helps you
-    explore repositories, contributors, pull requests, issues, and code files.
+    technologies: ['React', 'TypeScript', 'Node.js', 'GitHub API', 'Vite', 'Tailwind CSS'],
+    github: 'https://github.com/PrasannaMishra001/GitNaut',
+    demo: 'https://git-naut.vercel.app',
+    image: '/prasanna.jpeg',
+    details: `GitNaut is a terminal-first GitHub analytics cockpit built by Prasanna Mishra.
 
     • Repository intelligence and quick stats
-    • Contributor leaderboards and recent activity
-    • PR and issue summaries with recent items
-    • Language breakdowns and file size explorer
-    • File preview, copy, and download helpers
+    • Contributor leaderboards and activity snapshots
+    • PR analysis with visual charts and SVG export
+    • Language breakdowns, file tree, and file preview
+    • Multiple themes (Matrix, Amber, Blue, White)
+    • Mobile support, sound effects, command history
 
-    Built to support GSoC-style discovery and open-source research.`,
-    status: 'in-progress'
-  },
-  {
-    id: 'gitnaut-terminal-ui',
-    name: 'GitNaut Terminal UI',
-    description: 'Interactive terminal-themed GitNaut experience',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Web Audio API'],
-    github: 'https://github.com/PrasannaMishra001/gitnaut',
-    demo: 'https://gitnaut.vercel.app',
-    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg',
-    details: `A fully interactive terminal-themed GitNaut experience featuring:
-    
-    • Real-time command processing
-    • Multiple theme support (Matrix, Amber, Blue, White)
-    • Responsive design with mobile support
-    • Accessibility features and screen reader compatibility
-    • Sound effects and animations
-    • Command history and man pages
-    • Virtual keyboard for mobile devices
-    
-    Built with React, TypeScript, and modern web technologies.`,
+    Built with React + TypeScript + Vite + Tailwind CSS.
+    Backend: Node.js + Express proxying GitHub REST API.`,
     status: 'completed'
   },
   {
-    id: 'rusty-rain',
-    name: 'Rusty Rain',
-    description: 'Fast, cross-platform terminal rain effect built in Rust',
-    technologies: ['Rust', 'CLI', 'Terminal UI'],
-    github: 'https://github.com/cowboy8625/rusty-rain',
-    demo: 'https://crates.io/crates/rusty-rain',
-    image: 'https://images.pexels.com/photos/459301/pexels-photo-459301.jpeg',
-    details: `Rusty Rain is a Matrix-style terminal rain effect with deep customization.
+    id: 'churnaware',
+    name: 'ChurnAware',
+    description: 'ML-driven customer churn prediction with interpretable insights',
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
+    github: 'https://github.com/PrasannaMishra001/ChurnAware',
+    image: '/prasanna.jpeg',
+    details: `ChurnAware predicts customer churn using machine learning.
 
-    • Character groups, colors, speed, and direction controls
-    • Works on macOS, Linux, and Windows
-    • Install via Cargo, Docker, Winget, or script
-    • Metadata: crates.io, last updated, repo size, issues, lines of code, license, Discord chat
+    • Trains Random Forest, XGBoost, Logistic Regression ensembles
+    • Feature importance via SHAP and permutation importance
+    • Precision/Recall/F1 evaluation with confusion matrices
+    • Exploratory data analysis with Matplotlib & Seaborn
+    • Full Jupyter notebook pipeline from raw data to predictions
 
-    Quick install:
-    - cargo install rusty-rain
-    - cargo install --git https://github.com/cowboy8625/rusty-rain.git
-
-    Examples:
-    - rusty-rain -C 0,139,139 -H 255,255,255 -g jap -s -d left
-    - rusty-rain -g emojis -C red -H yellow -S 0,50
-    - rusty-rain -g large-letters -C blue -H white -d up`,
+    Dataset: Telco customer churn (7,043 records, 21 features).`,
     status: 'completed'
   },
   {
-    id: 'ai-chatbot',
-    name: 'AI Chatbot Platform',
-    description: 'Intelligent conversational AI with natural language processing',
-    technologies: ['Python', 'FastAPI', 'React', 'OpenAI API', 'PostgreSQL'],
-    github: 'https://github.com/PrasannaMishra001/ai-chatbot',
-    demo: 'https://chatbot-demo.dev',
-    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg',
-    details: `Advanced AI chatbot platform with features:
-    
-    • Natural language understanding
-    • Context-aware conversations
-    • Multi-language support
-    • Analytics dashboard
-    • Custom training capabilities
-    • REST API for integration
-    
-    Handles 10k+ conversations daily with 95% accuracy.`,
+    id: 'einstein-contact-manager',
+    name: 'Einstein Contact Manager',
+    description: 'Salesforce Lightning contact management with Einstein AI predictions',
+    technologies: ['Salesforce', 'Apex', 'Lightning Web Components', 'Einstein AI', 'SOQL'],
+    github: 'https://github.com/PrasannaMishra001/Einstein-Contact-Manager',
+    demo: 'https://github.com/PrasannaMishra001/Einstein-Contact-Manager',
+    image: '/prasanna.jpeg',
+    details: `Enterprise contact manager on the Salesforce platform.
+
+    • Lightning Web Components UI for contact CRUD
+    • Apex controllers with SOQL for data layer
+    • Einstein AI integration for lead scoring predictions
+    • Real-time search, filtering, and sorting
+    • Role-based access and sharing rules
+
+    Built during Salesforce developer training.`,
     status: 'completed'
   },
   {
-    id: 'data-viz-dashboard',
-    name: 'Data Visualization Dashboard',
-    description: 'Real-time analytics dashboard with interactive charts',
-    technologies: ['Vue.js', 'D3.js', 'Node.js', 'WebSocket', 'MongoDB'],
-    github: 'https://github.com/PrasannaMishra001/data-dashboard',
-    demo: 'https://dashboard-demo.dev',
-    image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg',
-    details: `Comprehensive analytics dashboard featuring:
-    
-    • Real-time data streaming
-    • Interactive charts and graphs
-    • Custom report generation
-    • Data export capabilities
-    • Role-based access control
-    • Mobile-responsive design
-    
-    Processes millions of data points with sub-second response times.`,
+    id: 'bodh',
+    name: 'Bodh',
+    description: 'AI-powered quiz & learning platform using Google Gemini',
+    technologies: ['React', 'Node.js', 'Google Gemini API', 'MongoDB', 'Tailwind CSS'],
+    github: 'https://github.com/PrasannaMishra001/Bodh',
+    image: '/prasanna.jpeg',
+    details: `Bodh is an AI-driven quiz platform that generates adaptive questions.
+
+    • Google Gemini API generates topic-specific questions
+    • Adaptive difficulty based on user performance
+    • Real-time scoring and leaderboard
+    • Topic selection across CS fundamentals
+    • Clean React UI with Tailwind CSS
+
+    Built for interactive learning and self-assessment.`,
     status: 'completed'
   },
   {
-    id: 'blockchain-wallet',
-    name: 'Crypto Wallet App',
-    description: 'Secure cryptocurrency wallet with multi-chain support',
-    technologies: ['React Native', 'Web3.js', 'Solidity', 'Redux', 'SQLite'],
-    github: 'https://github.com/PrasannaMishra001/crypto-wallet',
-    image: 'https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg',
-    details: `Secure cryptocurrency wallet application:
-    
-    • Multi-chain support (Bitcoin, Ethereum, BSC)
-    • Hardware wallet integration
-    • DeFi protocol interactions
-    • Asset tracking
-    • Security audited smart contracts
-    • Biometric authentication
-    
-    Manages $1M+ in digital assets securely.`,
-    status: 'in-progress'
+    id: 'cattle-health',
+    name: 'Cattle Health Monitoring',
+    description: 'Sensor data + ML pipeline for livestock health prediction',
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'IoT', 'Flask'],
+    github: 'https://github.com/PrasannaMishra001/Cattle-Health-Monitoring',
+    image: '/prasanna.jpeg',
+    details: `ML-based cattle health monitoring system.
+
+    • Ingests sensor data (temperature, heart rate, activity)
+    • Random Forest classifier for health status prediction
+    • Alert system for abnormal readings
+    • Flask API for real-time predictions
+    • Data visualization dashboard
+
+    Built for agricultural tech applications.`,
+    status: 'completed'
+  },
+  {
+    id: 'apnasafar',
+    name: 'ApnaSafar',
+    description: 'Travel itinerary planner with smart recommendations',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Google Maps API'],
+    github: 'https://github.com/PrasannaMishra001/ApnaSafar',
+    image: '/prasanna.jpeg',
+    details: `ApnaSafar helps users plan travel itineraries with smart suggestions.
+
+    • Interactive map integration with Google Maps API
+    • Budget-aware trip planning and cost estimation
+    • Place recommendations based on preferences
+    • Day-wise itinerary builder with drag-and-drop
+    • User reviews and shared trip plans
+
+    Full MERN stack application.`,
+    status: 'completed'
   }
 ];
 
 export const skills: Skill[] = [
   {
+    category: 'Languages',
+    items: [
+      { name: 'C++', level: 90, icon: '⚡' },
+      { name: 'Python', level: 88, icon: '🐍' },
+      { name: 'Java', level: 82, icon: '☕' },
+      { name: 'PHP', level: 85, icon: '🐘' },
+      { name: 'JavaScript/TS', level: 88, icon: '📘' }
+    ]
+  },
+  {
     category: 'Frontend',
     items: [
-      { name: 'React', level: 95, icon: '⚛️' },
-      { name: 'TypeScript', level: 90, icon: '📘' },
-      { name: 'Vue.js', level: 85, icon: '💚' },
-      { name: 'CSS/SCSS', level: 88, icon: '🎨' },
-      { name: 'Tailwind CSS', level: 92, icon: '🌊' }
+      { name: 'Vue.js', level: 90, icon: '💚' },
+      { name: 'React', level: 85, icon: '⚛️' },
+      { name: 'Tailwind CSS', level: 88, icon: '🌊' },
+      { name: 'HTML/CSS/SCSS', level: 90, icon: '🎨' },
+      { name: 'TypeScript', level: 85, icon: '📘' }
     ]
   },
   {
-    category: 'Backend',
+    category: 'Backend & DB',
     items: [
-      { name: 'Node.js', level: 88, icon: '🟢' },
-      { name: 'Python', level: 85, icon: '🐍' },
-      { name: 'PostgreSQL', level: 82, icon: '🐘' },
-      { name: 'MongoDB', level: 80, icon: '🍃' },
-      { name: 'Redis', level: 75, icon: '🔴' }
+      { name: 'MySQL', level: 88, icon: '🗄️' },
+      { name: 'Node.js', level: 85, icon: '🟢' },
+      { name: 'Express', level: 82, icon: '⚙️' },
+      { name: 'MongoDB', level: 78, icon: '🍃' },
+      { name: 'Redis', level: 72, icon: '🔴' }
     ]
   },
   {
-    category: 'DevOps',
+    category: 'ML & Tools',
     items: [
-      { name: 'Docker', level: 85, icon: '🐳' },
-      { name: 'Kubernetes', level: 78, icon: '⚙️' },
-      { name: 'AWS', level: 82, icon: '☁️' },
-      { name: 'GitHub Actions', level: 88, icon: '🔄' },
-      { name: 'Terraform', level: 72, icon: '🏗️' }
-    ]
-  },
-  {
-    category: 'Tools',
-    items: [
-      { name: 'Git', level: 95, icon: '📝' },
-      { name: 'VS Code', level: 98, icon: '💻' },
-      { name: 'Figma', level: 75, icon: '🎯' },
-      { name: 'Jest', level: 85, icon: '🧪' },
-      { name: 'Webpack', level: 80, icon: '📦' }
+      { name: 'Scikit-learn', level: 85, icon: '🤖' },
+      { name: 'Pandas/NumPy', level: 88, icon: '📊' },
+      { name: 'Docker', level: 80, icon: '🐳' },
+      { name: 'Git/GitHub', level: 95, icon: '📝' },
+      { name: 'Linux', level: 85, icon: '🐧' }
     ]
   }
 ];

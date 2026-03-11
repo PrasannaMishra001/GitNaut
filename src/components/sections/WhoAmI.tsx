@@ -15,7 +15,7 @@ export const WhoAmI: React.FC = () => {
           </div>
           <div className="flex justify-start md:justify-end">
             <img
-              src="/profile-pic.jpg"
+              src="/prasanna.jpeg"
               alt="Prasanna Mishra profile"
               className="h-24 w-24 rounded-full border-2 border-terminal-accent object-cover shadow-lg"
             />
@@ -31,16 +31,19 @@ export const WhoAmI: React.FC = () => {
             <div className="space-y-4 text-terminal-text">
               <p>
                 Hi there! I'm Prasanna Mishra (<span className="text-terminal-accent">PrasannaMishra001</span>), 
-                a developer focused on <span className="text-terminal-accent">problem solving</span>, 
-                <span className="text-terminal-accent">backend-heavy systems</span>, and 
-                <span className="text-terminal-accent">applied ML</span>.
+                a B.Tech CSE student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.87).
               </p>
               <p>
-                I'm a contributor to <span className="text-terminal-accent">omegaup</span> and actively learning 
-                <span className="text-terminal-accent">Machine Learning & Deep Learning</span> with practical applications.
+                Open-source contributor to <span className="text-terminal-accent">omegaUp</span> with 
+                <span className="text-terminal-success"> 21 merged PRs</span> spanning Vue.js, PHP, MySQL, TypeScript, Docker & CI/CD.
               </p>
               <p>
-                📫 Reach me at <span className="text-terminal-success">prasanna.iiitm@gmail.com</span>.
+                Research Intern under <span className="text-terminal-accent">Dr. Roshni Chakraborty</span> — building ML pipelines 
+                for event extraction from StockTwits posts using NLP and time-series analysis.
+              </p>
+              <p>
+                📫 Reach me at <span className="text-terminal-success">prasanna.iiitm@gmail.com</span> | 
+                📞 <span className="text-terminal-success">+91-7991305498</span>
               </p>
             </div>
           </div>
@@ -52,8 +55,9 @@ export const WhoAmI: React.FC = () => {
                 Currently Working On
               </h4>
               <ul className="text-terminal-text text-sm space-y-1">
-                <li>• Text analysis & event extraction pipelines</li>
-                <li>• ML-driven insights from stock-social data</li>
+                <li>• omegaUp open-source contributions (Vue, PHP, MySQL)</li>
+                <li>• StockTwits ML event extraction research</li>
+                <li>• Competitive programming (LeetCode Knight 1858)</li>
               </ul>
             </div>
 
@@ -64,8 +68,8 @@ export const WhoAmI: React.FC = () => {
               </h4>
               <ul className="text-terminal-text text-sm space-y-1">
                 <li>• Problem solving & algorithmic thinking</li>
-                <li>• Backend-first systems & APIs</li>
-                <li>• Applied ML & data pipelines</li>
+                <li>• Backend systems & API development</li>
+                <li>• Applied ML & NLP pipelines</li>
                 <li>• Open-source collaboration</li>
               </ul>
             </div>
@@ -76,10 +80,23 @@ export const WhoAmI: React.FC = () => {
                 Tech Stack
               </h4>
               <ul className="text-terminal-text text-sm space-y-1">
-                <li>• Frontend: Vue, TypeScript, HTML, CSS/SCSS</li>
-                <li>• Backend & DB: PHP, MySQL</li>
-                <li>• Problem Solving / ML: C++, Python, Java</li>
-                <li>• Infra: Docker, Redis, Linux, Git</li>
+                <li>• Frontend: Vue.js, React, TypeScript, Tailwind CSS</li>
+                <li>• Backend & DB: PHP, MySQL, Node.js, Express</li>
+                <li>• ML / DS: Python, Scikit-learn, Pandas, NumPy</li>
+                <li>• Infra: Docker, Redis, Linux, Git, CI/CD</li>
+              </ul>
+            </div>
+
+            <div className="bg-terminal-hover p-4 rounded-lg border border-terminal-border">
+              <h4 className="text-terminal-accent font-bold mb-2 flex items-center">
+                <Zap size={16} className="mr-2" />
+                Achievements
+              </h4>
+              <ul className="text-terminal-text text-sm space-y-1">
+                <li>• GATE 2026 Qualified — CS & IT</li>
+                <li>• Knight on LeetCode (max rating 1858)</li>
+                <li>• National Science Congress Winner</li>
+                <li>• JEE Mains Qualified 2022</li>
               </ul>
             </div>
           </div>
@@ -108,7 +125,7 @@ export const WhoAmI: React.FC = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Book className="text-terminal-accent" size={16} />
-                <span className="text-terminal-text text-sm">Medium: medium.com/@mishra.prasanna838</span>
+                <span className="text-terminal-text text-sm">Portfolio: git-naut.vercel.app</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Book className="text-terminal-accent" size={16} />
@@ -125,6 +142,14 @@ export const WhoAmI: React.FC = () => {
                 <span className="text-terminal-success">Available for collaboration</span>
               </div>
               <div className="flex justify-between">
+                <span className="text-terminal-muted">College:</span>
+                <span className="text-terminal-text">ABV-IIITM Gwalior</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-terminal-muted">CGPA:</span>
+                <span className="text-terminal-accent">8.87 / 10</span>
+              </div>
+              <div className="flex justify-between">
                 <span className="text-terminal-muted">Location:</span>
                 <span className="text-terminal-text">India</span>
               </div>
@@ -132,20 +157,16 @@ export const WhoAmI: React.FC = () => {
                 <span className="text-terminal-muted">Timezone:</span>
                 <span className="text-terminal-text">IST (UTC+5:30)</span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-terminal-muted">Coffee Level:</span>
-                <span className="text-terminal-accent">███████░░░ 70%</span>
-              </div>
             </div>
           </div>
 
           <div className="bg-terminal-hover p-4 rounded-lg border border-terminal-border">
             <h4 className="text-terminal-accent font-bold mb-3">$ uptime</h4>
             <div className="text-terminal-text text-sm">
-              <div>Contributor: <span className="text-terminal-accent">omegaup</span></div>
+              <div>Contributor: <span className="text-terminal-accent">omegaUp (21 merged PRs)</span></div>
+              <div>Research: <span className="text-terminal-accent">StockTwits ML · Dr. Chakraborty</span></div>
               <div>Focus: <span className="text-terminal-accent">Backend + Applied ML</span></div>
-              <div>Now: <span className="text-terminal-accent">Learning Deep Learning</span></div>
-              <div>Drive: <span className="text-terminal-accent">High-impact systems</span></div>
+              <div>Drive: <span className="text-terminal-accent">High-impact open-source</span></div>
             </div>
           </div>
         </div>

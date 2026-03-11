@@ -41,10 +41,10 @@ export const Skills: React.FC = () => {
           <div key={categoryIndex} className="skill-category">
             <h3 className="text-terminal-accent font-bold text-lg mb-4 flex items-center">
               <span className="mr-2">
+                {category.category === 'Languages' && '⚡'}
                 {category.category === 'Frontend' && '🎨'}
-                {category.category === 'Backend' && '⚙️'}
-                {category.category === 'DevOps' && '🚀'}
-                {category.category === 'Tools' && '🛠️'}
+                {category.category === 'Backend & DB' && '⚙️'}
+                {category.category === 'ML & Tools' && '🛠️'}
               </span>
               {category.category}
             </h3>
@@ -87,16 +87,16 @@ export const Skills: React.FC = () => {
 
       <div className="mt-8 grid gap-4 md:grid-cols-3">
         <div className="stat-card bg-terminal-hover p-4 rounded border border-terminal-border">
-          <div className="text-2xl font-bold text-terminal-accent">25+</div>
+          <div className="text-2xl font-bold text-terminal-accent">20+</div>
           <div className="text-terminal-muted text-sm">Technologies</div>
         </div>
         <div className="stat-card bg-terminal-hover p-4 rounded border border-terminal-border">
-          <div className="text-2xl font-bold text-terminal-accent">5+</div>
-          <div className="text-terminal-muted text-sm">Years Experience</div>
+          <div className="text-2xl font-bold text-terminal-accent">21</div>
+          <div className="text-terminal-muted text-sm">Merged PRs (omegaUp)</div>
         </div>
         <div className="stat-card bg-terminal-hover p-4 rounded border border-terminal-border">
-          <div className="text-2xl font-bold text-terminal-accent">50+</div>
-          <div className="text-terminal-muted text-sm">Projects Completed</div>
+          <div className="text-2xl font-bold text-terminal-accent">6+</div>
+          <div className="text-terminal-muted text-sm">Projects Built</div>
         </div>
       </div>
 

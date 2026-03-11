@@ -10,7 +10,7 @@ const cache = new Map();
 
 const defaultTtlMs = Number(process.env.GITNAUT_CACHE_TTL_MS || 60000);
 const allowTokenHeader = process.env.GITNAUT_ALLOW_TOKEN_HEADER === 'true';
-const allowedOrigins = (process.env.GITNAUT_ALLOWED_ORIGINS || '').split(',').map(item => item.trim()).filter(Boolean);
+const allowedOrigins = (process.env.GITNAUT_ALLOWED_ORIGINS || 'http://localhost:5173,https://git-naut.vercel.app').split(',').map(item => item.trim()).filter(Boolean);
 
 app.use(express.json({ limit: '1mb' }));
 app.use(cors({
@@ -452,3 +452,5 @@ app.get('/api/rate', async (req, res) => {
 app.listen(port, () => {
   console.log(`GitNaut API running on http://localhost:${port}`);
 });
+
+export default app;
