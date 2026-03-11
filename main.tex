@@ -1,0 +1,229 @@
+\documentclass[a4paper,11pt]{article}
+
+% ----- PACKAGES -----
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{graphicx} % Essential for \includegraphics
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage[pdftex]{hyperref} % Load hyperref last
+
+% ----- COLOR & HYPERLINK DEFINITION -----
+\definecolor{linkblue}{rgb}{0.0, 0.2, 0.6} % A professional dark blue - Hex: #003399
+\hypersetup{
+    colorlinks=true, % Set to true for colored text links
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdfpagemode=FullScreen,
+}
+
+% ----- DOCUMENT LAYOUT -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.68in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.55in}
+\addtolength{\textheight}{1in}
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ----- NEW COLUMN TYPES FOR TABULARX -----
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+% ----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-10pt}\bfseries\MakeUppercase\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% ----- CUSTOM COMMANDS -----
+\newcommand{\codingLogo}[2]{\raisebox{-0.15ex}{\includegraphics[height=#2]{#1}}}
+\newcommand{\ExternalLink}{\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{\begin{scope}[x=1ex, y=1ex]\clip (-0.1,-0.1) --++ (-0, 1.2) --++ (0.6, 0) --++ (0, -0.6) --++ (0.6, 0) --++ (0, -1); \path[draw, line width = 0.5, rounded corners=0.5] (0,0) rectangle (1,1); \end{scope}\path[draw, line width = 0.5] (0.5, 0.5) -- (1, 1);\path[draw, line width = 0.5] (0.6, 1) -- (1, 1) -- (1, 0.6);}}
+\newcommand{\resumeSubheading}[4]{\item \begin{tabular*}{\dimexpr0.97\textwidth-\labelwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & \textbf{#2} \\\textit{\small#3} & \textit{\small#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeProject}[3]{\item \textbf{#1} \textit{(#2)} \hfill \footnotesize{#3}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, labelsep=0.5em]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  DEFINE YOUR DETAILS HERE  %%%%%%%
+\newcommand{\name}{Prasanna Mishra}
+\newcommand{\phone}{+91-9506287890}
+\newcommand{\emaila}{mishra.prasanna838@gmail.com}
+\newcommand{\github}{PrasannaMishra001}
+\newcommand{\linkedin}{prasanna-mishra-871269367}
+\newcommand{\website}{https://git-naut.vercel.app/}
+\newcommand{\leetcode}{Prasanna_Mishra}
+\newcommand{\codechef}{prasannamishra}
+\newcommand{\codeforces}{prasanna_mishra}
+%-------------------------------------------
+
+\begin{document}
+
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+    \includegraphics[width=2.2cm,clip]{iiitm.png}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+    \begin{tabularx}{\linewidth}{@{}L r@{}}
+      \multicolumn{2}{@{}l@{}}{\textbf{\LARGE \name}} \\[3pt]
+      \href{tel:+919506287890}{\faPhone\ \phone} &
+        \href{mailto:\emaila}{\faEnvelope\ \emaila} \\
+      \href{https://github.com/\github}{\faGithub\ \github} &
+        \href{mailto:imt_2023059@iiitm.ac.in}{\faEnvelope\ imt\_2023059@iiitm.ac.in} \\
+      \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedin\ in/\linkedin} &
+        \href{\website}{\faGlobe\ git-naut.vercel.app} \\
+      \href{https://leetcode.com/u/\leetcode}{\codingLogo{leetcode-logo.png}{1.6ex} LeetCode/\leetcode} & \\
+      \href{https://codeforces.com/profile/\codeforces}{\codingLogo{codeforces-logo.png}{1.6ex} Codeforces/\codeforces} & \\
+      \href{https://www.codechef.com/users/\codechef}{\codingLogo{codechef-logo.png}{1.6ex} CodeChef/\codechef} & \\
+    \end{tabularx}
+}
+\vspace{5pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\setlength{\tabcolsep}{5pt}
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  Integrated B.Tech + M.Tech, IT & ABV-IIITM, Gwalior (INI) & 8.87 CGPA (9.27 SGPA) & 2023 -- 2028\\
+  \hline
+  Senior Secondary (Class XII) & C.B.S.E Board & 96.67\% & 2023 \\
+  \hline
+  Secondary (Class X) & C.B.S.E Board & 95.8\% & 2021 \\
+  \hline
+\end{tabularx}}
+\vspace{1mm}
+\small{\textit{JEE Mains 99th percentile $\vert$ Top 5 in batch $\vert$ MCM Scholarship recipient $\vert$ \href{https://drive.google.com/drive/folders/1S1DK5RQ554cfmcy-5H6tFfmkBwR3zL5v?usp=sharing}{Verified Gradesheets \ExternalLink}}}
+\vspace{2mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Open Source Contributor}
+        {Aug 2025 -- Present}
+        {\href{https://github.com/omegaup/omegaup}{omegaUp} --- Online judge \& education platform (Vue 2, TypeScript, PHP 8.1, MySQL 8.0)}
+        {Remote}
+        \resumeItemListStart
+            \item Merged \href{https://github.com/omegaup/omegaup/pulls?q=is\%3Apr+author\%3APrasannaMishra001+is\%3Aclosed}{\textbf{21 pull requests}} into the main repository; contributing 4--5 hours daily. Stack: Docker, Kubernetes, Redis, Webpack, Jest, Cypress, PHPUnit.
+            \item Built \href{https://github.com/omegaup/omegaup/pull/8794}{GitHub OAuth sign-in} end-to-end --- PHP controller, DB migration, Vue components, TS types (25 files, +713 lines).
+            \item Shipped \href{https://github.com/omegaup/omegaup/pull/8412}{human-readable contest dates} across Vue, TypeScript \& i18n with zero regressions (15 files, +544 lines).
+            \item Improved \href{https://github.com/omegaup/omegaup/pull/8959}{custom test-case discoverability} in the Bootstrap-dense arena interface (14 files).
+            \item Created \href{https://github.com/omegaup/omegaup/pull/8846}{reusable 3D hover badge} component with composable CSS animations (Vue + SCSS).
+            \item Refactored \href{https://github.com/omegaup/omegaup/pull/8599}{navbar dropdown behavior} integrating Bootstrap 4 lifecycle with Vue reactivity.
+            \item Actively mentoring fellow contributors; coordinating with maintainer \href{https://github.com/pabo99}{@pabo99}.
+        \resumeItemListEnd
+    \resumeSubheading
+        {Research Intern}
+        {Nov 2025 -- Present}
+        {Under \href{https://www.iiitm.ac.in/index.php/en/component/splms/teacher/Roshni}{Dr.\ Roshni Chakraborty}, ABV-IIITM Gwalior}
+        {Gwalior, India}
+        \resumeItemListStart
+            \item Investigating expert identification from StockTwits social-media data (2008--2022) to improve stock trend prediction.
+            \item Building ML pipeline for sentiment accuracy analysis and expert signal extraction using NLP and Transformers.
+            \item Enriching user metadata via targeted API-based scraping for behavioral pattern analysis.
+        \resumeItemListEnd
+    \resumeSubheading
+        {Project Intern}
+        {May 2024 -- Aug 2024}
+        {Advanced Materials Research Lab, ABV-IIITM}
+        {Gwalior, India}
+        \resumeItemListStart
+            \item Engineered a multi-sensor IoT device (Arduino) to monitor cattle health metrics (temperature, heart rate, ambient gas). \href{https://github.com/PrasannaMishra001/Cattle-Animal-Health-Tracking-System}{\faGithub}
+            \item Built data pipeline transmitting sensor readings via Wi-Fi/Bluetooth to Firebase \& Google Sheets for real-time remote monitoring.
+            \item Created proof-of-concept mobile app for data visualization and device management. \textit{Patent being filed.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProject{GitNaut x Portfolio}
+                 {React, TypeScript, Vite, Node.js, Tailwind CSS}
+                 {Jan 2026 -- Mar 2026 $\vert$ \href{https://git-naut.vercel.app/}{\faGlobe} $\vert$ \href{https://github.com/PrasannaMishra001/GitNaut}{\faGithub}}
+    \resumeItemListStart
+        \item Terminal-first GitHub intelligence desk --- repo summaries, language breakdowns, contributor snapshots, PR analysis with SVG charts, file tree inspection, and interactive themes.
+        \item Features matrix-rain animation, sound effects, autocomplete, and full keyboard-driven UX.
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeProject{ChurnAware --- Sentiment-Aware Churn Prediction}
+                 {Python, Scikit-learn, Pandas, Streamlit}
+                 {Sep 2025 -- Nov 2025 $\vert$ \href{https://github.com/PrasannaMishra001/ChurnAware}{\faGithub}}
+    \resumeItemListStart
+        \item Implemented RFM (Recency-Frequency-Monetary) segmentation pipeline on Blinkit e-grocery dataset to identify at-risk customers.
+        \item Built sentiment-aware churn prediction model combining customer behavioral signals with review sentiment analysis.
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeProject{Einstein Contact Manager}
+                 {Next.js 15, FastAPI, PostgreSQL, Groq AI, Gemini OCR}
+                 {Nov 2024 -- Feb 2025 $\vert$ \href{https://einstein11.vercel.app/}{\faGlobe} $\vert$ \href{https://github.com/PrasannaMishra001/einstein-contact-manager}{\faGithub}}
+    \resumeItemListStart
+        \item Full-stack AI contact manager with NL search, smart dedup \& merge, business-card OCR, Google Contacts sync, CSV/vCard import-export, analytics dashboard, and neobrutalism UI.
+        \item Integrated Groq LLaMA 3.3-70B for natural-language search and Gemini 2.5 Flash for photo-to-contact OCR.
+    \resumeItemListEnd
+    \vspace{2pt}
+    \resumeProject{ApnaSafar (Webkriti Contest Winner)}
+                 {MERN Stack (MongoDB, Express.js, React, Node.js)}
+                 {May 2024 -- Aug 2024 $\vert$ \href{https://frontend-drab-zeta-69.vercel.app/}{\faGlobe} $\vert$ \href{https://github.com/ApnaSafar/frontend}{\faGithub}}
+    \resumeItemListStart
+        \item Awarded 1st place in Webkriti, a 3-month full-stack development contest; built a comprehensive travel booking platform from scratch.
+        \item Implemented user authentication, ticket/hotel search, seat selection, email notifications, and downloadable PDF tickets.
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}l X}
+  \textbf{Languages} & C++ (C11/C++11/17/20), Python, JavaScript, TypeScript, PHP 8.1, Java, C, Kotlin, HTML/CSS, SCSS \\
+  \textbf{Frontend} & Vue.js 2, React, Next.js 15, Tailwind CSS, Bootstrap Vue, Monaco Editor, SCSS \\
+  \textbf{Backend} & PHP (MVC + Twig), Node.js, Express.js, FastAPI, Django \\
+  \textbf{Databases} & MySQL 8.0, MongoDB, PostgreSQL, Firebase, Redis \\
+  \textbf{ML / Data} & Scikit-learn, Pandas, NLP, Transformers, Streamlit, RFM Modelling \\
+  \textbf{DevOps / Tools} & Docker, Kubernetes, Git, Linux, Webpack 5, RabbitMQ, New Relic, Arduino \\
+  \textbf{Testing} & Jest, Cypress, PHPUnit \\
+\end{tabularx}
+
+%-----------KEY COURSES TAKEN-----------------
+\section{Key Courses Taken}
+\small{Graph Theory \& Discrete Structures \textbf{(A)} $\vert$
+Database Systems \textbf{(A)} $\vert$
+Computer Organization \& Architecture \textbf{(A)} $\vert$
+Computer Networks \& Data Communications \textbf{(A)} $\vert$
+Hardware Workshop \textbf{(A)} $\vert$
+Object-Oriented Programming \textbf{(A)} $\vert$
+Design \& Analysis of Algorithms $\vert$
+Trustworthy AI}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+\resumeSubHeadingListStart
+    \item \href{https://gate2026.iitg.ac.in/}{\textbf{GATE 2026}} Qualified --- result awaiting; cleared expected cutoff.
+    \item \textbf{Knight Badge, LeetCode} --- Rating \textbf{1,858}; 500+ problems solved across platforms (400+ on LeetCode alone).
+    \item \textbf{Pull Shark $\times$2, Pair Extraordinaire, Quickdraw} --- GitHub achievements earned through omegaUp open-source contributions.
+    \item \textbf{SIH 2025 Participant:} Developed solutions for real-world problems at the Smart India Hackathon.
+    \item \textbf{Webkriti Hackathon Winner (2024):} 1st place in a 3-month full-stack web development competition at IIITM Gwalior.
+    \item \textbf{Merit-cum-Means (MCM) Scholarship:} Awarded by IIITM Gwalior for academic excellence.
+    \item \textbf{AlgoUniversity ICPC Camp:} Qualified to Stage 2 of the selection for the competitive programming camp.
+    \item \textbf{Reliance Foundation Undergraduate Scholar (2023):} Merit-based scholarship for academic excellence.
+    \item \textbf{National Children's Science Congress Winner (2017):} 1st in India (KVS) for Drought Management System project.
+\resumeSubHeadingListEnd
+
+\end{document}
