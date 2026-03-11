@@ -1,7 +1,7 @@
 node_modules/
 server/node_modules/
 .DS_Store
-
+RESUME_UPDATE_GUIDE.md
 # Build output
 dist/
 .vite/
