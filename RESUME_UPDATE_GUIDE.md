@@ -13,16 +13,16 @@ Step-by-step instructions for updating the resume and syncing the PDF link every
 
 ---
 
-## Step 2 — Upload the PDF to Google Drive
+## Step 2 — Upload the New PDF to Google Drive (keeping the same link)
 
-1. Go to [drive.google.com](https://drive.google.com) and open the folder where you keep `Resume.pdf`
-2. Right-click → **Upload files** → select the new PDF (or drag and drop)
-3. Right-click the uploaded file → **Share** → change to **Anyone with the link → Viewer**
-4. Copy the shareable link — it looks like:
-   ```
-   https://drive.google.com/file/d/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/view?usp=sharing
-   ```
-5. Note down this new link
+> **Important:** Use "Manage versions" — this replaces the file content while keeping the same file ID and shareable link. No code changes needed.
+
+1. Go to [drive.google.com](https://drive.google.com) and find your `Resume.pdf`
+2. Right-click it → **Manage versions**
+3. Click **Upload new version** → select your new PDF
+4. Done. The existing link (`https://drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3/view?usp=sharing`) now serves the new PDF automatically — **no link updates required**
+
+> Only proceed to Step 3 if you accidentally deleted the old file and uploaded a fresh one with a different Drive ID.
 
 ---
 
