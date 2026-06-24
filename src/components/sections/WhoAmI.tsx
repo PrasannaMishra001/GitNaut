@@ -31,7 +31,7 @@ export const WhoAmI: React.FC = () => {
             <div className="space-y-4 text-terminal-text">
               <p>
                 Hi there! I'm Prasanna Mishra (<span className="text-terminal-accent">PrasannaMishra001</span>), 
-                a B.Tech CSE student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.87).
+                a B.Tech CSE student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.92).
               </p>
               <p>
                 Open-source contributor to <span className="text-terminal-accent">omegaUp</span> with 
@@ -39,11 +39,11 @@ export const WhoAmI: React.FC = () => {
               </p>
               <p>
                 Building <span className="text-terminal-accent">ASTRA-IDE</span> (astraide.tech) — a self-scheduling
-                cloud IDE with a deep-RL Kubernetes scheduler, gVisor sandboxing, and CRDT live collaboration, as my B.Tech final-year research.
+                cloud IDE with a deep-RL Kubernetes scheduler, gVisor sandboxing, and CRDT live collaboration.
               </p>
               <p>
-                📫 Reach me at <span className="text-terminal-success">prasanna.iiitm@gmail.com</span> | 
-                📞 <span className="text-terminal-success">+91-7991305498</span>
+                📫 Reach me at <span className="text-terminal-success">mishra.prasanna838@gmail.com</span> |
+                📞 <span className="text-terminal-success">+91-9506287890</span>
               </p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export const WhoAmI: React.FC = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-terminal-muted">CGPA:</span>
-                <span className="text-terminal-accent">8.87 / 10</span>
+                <span className="text-terminal-accent">8.92 / 10</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-terminal-muted">Location:</span>

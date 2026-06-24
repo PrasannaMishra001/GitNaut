@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 ## 👋 About Prasanna
 
 - 21 merged PRs at [omegaUp](https://github.com/omegaup/omegaup) (Vue 2 · TypeScript · PHP 8.1 · MySQL · Docker)
-- Building [ASTRA-IDE](https://astraide.tech) — a self-scheduling cloud IDE (deep-RL Kubernetes scheduler, gVisor sandboxing, CRDT collaboration) as B.Tech final-year research
+- Building [ASTRA-IDE](https://astraide.tech) — a self-scheduling cloud IDE (deep-RL Kubernetes scheduler, gVisor sandboxing, CRDT collaboration)
 - Knight on LeetCode (rating 1858) · 500+ problems solved
 - Focused on **open-source**, **backend systems**, and **applied ML**
 - 🌐 Portfolio: [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/)

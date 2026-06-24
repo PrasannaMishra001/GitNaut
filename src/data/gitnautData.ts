@@ -23,12 +23,12 @@ export const projects: Project[] = [
   {
     id: 'astra-ide',
     name: 'ASTRA-IDE',
-    description: 'Self-scheduling cloud IDE with a deep-RL Kubernetes scheduler (B.Tech final-year research)',
+    description: 'Self-scheduling cloud IDE with a deep-RL Kubernetes scheduler',
     technologies: ['Next.js 14', 'FastAPI', 'Docker', 'gVisor', 'Kubernetes', 'PyTorch', 'eBPF', 'Yjs'],
     github: 'https://github.com/PrasannaMishra001/astra-ide',
     demo: 'https://astraide.tech',
     image: '/prasanna.jpeg',
-    details: `ASTRA-IDE is a production cloud IDE and B.Tech final-year research platform.
+    details: `ASTRA-IDE is a production-grade self-scheduling cloud IDE.
 
     • Real per-workspace containers with adaptive runc/gVisor sandboxing
     • Deep-RL (PPO) Kubernetes scheduler for placement decisions

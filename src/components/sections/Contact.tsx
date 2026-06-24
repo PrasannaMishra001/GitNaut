@@ -130,7 +130,7 @@ export const Contact: React.FC = () => {
               <Mail className="text-terminal-accent" size={20} />
               <div>
                 <div className="text-terminal-text font-medium">Email</div>
-                <div className="text-terminal-muted text-sm">prasanna.iiitm@gmail.com</div>
+                <div className="text-terminal-muted text-sm">mishra.prasanna838@gmail.com</div>
               </div>
             </div>
             
@@ -138,7 +138,7 @@ export const Contact: React.FC = () => {
               <Phone className="text-terminal-accent" size={20} />
               <div>
                 <div className="text-terminal-text font-medium">Phone</div>
-                <div className="text-terminal-muted text-sm">Available on request</div>
+                <div className="text-terminal-muted text-sm">+91-9506287890</div>
               </div>
             </div>
             
