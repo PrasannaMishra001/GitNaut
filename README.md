@@ -2,7 +2,7 @@
 
 **Live:** [git-naut.vercel.app](https://git-naut.vercel.app) &nbsp;|&nbsp; **Portfolio:** [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/) &nbsp;|&nbsp; **Resume:** [View PDF](https://drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3/view?usp=sharing)
 
-GitNaut is a terminal-first GitHub intelligence desk for fast repo insights — type commands, explore any public repository without leaving the keyboard. Built and maintained by **[Prasanna Mishra](https://prasannamishra001.github.io/prasannamishra/)** (`PrasannaMishra001`), open-source contributor at omegaUp and Research Intern at ABV-IIITM Gwalior.
+GitNaut is a terminal-first GitHub intelligence desk for fast repo insights — type commands, explore any public repository without leaving the keyboard. Built and maintained by **[Prasanna Mishra](https://prasannamishra001.github.io/prasannamishra/)** (`PrasannaMishra001`), open-source contributor at omegaUp and builder of [ASTRA-IDE](https://astraide.tech), a self-scheduling cloud IDE.
 
 It acts as a developer dashboard in a terminal skin: pull up repo stats, inspect language breakdowns, visualise PR activity with SVG charts, browse the file tree, and read raw files — all through a command-line interface running in the browser. No login required; just type a GitHub owner/repo and hit Enter.
 
@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/a78df4f5-bb41-4cdc-adce-6a0ab2dec549
 ## 👋 About Prasanna
 
 - 21 merged PRs at [omegaUp](https://github.com/omegaup/omegaup) (Vue 2 · TypeScript · PHP 8.1 · MySQL · Docker)
-- Research Intern under Dr. Roshni Chakraborty, ABV-IIITM Gwalior — stock prediction from StockTwits social data
+- Building [ASTRA-IDE](https://astraide.tech) — a self-scheduling cloud IDE (deep-RL Kubernetes scheduler, gVisor sandboxing, CRDT collaboration) as B.Tech final-year research
 - Knight on LeetCode (rating 1858) · 500+ problems solved
 - Focused on **open-source**, **backend systems**, and **applied ML**
 - 🌐 Portfolio: [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/)

@@ -21,6 +21,26 @@ export interface Skill {
 
 export const projects: Project[] = [
   {
+    id: 'astra-ide',
+    name: 'ASTRA-IDE',
+    description: 'Self-scheduling cloud IDE with a deep-RL Kubernetes scheduler (B.Tech final-year research)',
+    technologies: ['Next.js 14', 'FastAPI', 'Docker', 'gVisor', 'Kubernetes', 'PyTorch', 'eBPF', 'Yjs'],
+    github: 'https://github.com/PrasannaMishra001/astra-ide',
+    demo: 'https://astraide.tech',
+    image: '/prasanna.jpeg',
+    details: `ASTRA-IDE is a production cloud IDE and B.Tech final-year research platform.
+
+    • Real per-workspace containers with adaptive runc/gVisor sandboxing
+    • Deep-RL (PPO) Kubernetes scheduler for placement decisions
+    • eBPF telemetry and LSTM-based container pre-warming
+    • Karmada multi-cluster federation
+    • Yjs CRDT live collaboration (multi-user editing)
+    • CI/CD via GitHub Actions and GHCR
+
+    Live at astraide.tech. Stack: Next.js 14 + FastAPI + Docker + Kubernetes + PyTorch.`,
+    status: 'in-progress'
+  },
+  {
     id: 'gitnaut',
     name: 'GitNaut',
     description: 'Terminal-style GitHub intelligence and contributor analytics',
@@ -140,7 +160,6 @@ export const skills: Skill[] = [
     items: [
       { name: 'C++', level: 90, icon: '⚡' },
       { name: 'Python', level: 88, icon: '🐍' },
-      { name: 'Java', level: 82, icon: '☕' },
       { name: 'PHP', level: 85, icon: '🐘' },
       { name: 'JavaScript/TS', level: 88, icon: '📘' }
     ]

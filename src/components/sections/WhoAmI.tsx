@@ -38,8 +38,8 @@ export const WhoAmI: React.FC = () => {
                 <span className="text-terminal-success"> 21 merged PRs</span> spanning Vue.js, PHP, MySQL, TypeScript, Docker & CI/CD.
               </p>
               <p>
-                Research Intern under <span className="text-terminal-accent">Dr. Roshni Chakraborty</span> — building ML pipelines 
-                for event extraction from StockTwits posts using NLP and time-series analysis.
+                Building <span className="text-terminal-accent">ASTRA-IDE</span> (astraide.tech) — a self-scheduling
+                cloud IDE with a deep-RL Kubernetes scheduler, gVisor sandboxing, and CRDT live collaboration, as my B.Tech final-year research.
               </p>
               <p>
                 📫 Reach me at <span className="text-terminal-success">prasanna.iiitm@gmail.com</span> | 
@@ -56,7 +56,7 @@ export const WhoAmI: React.FC = () => {
               </h4>
               <ul className="text-terminal-text text-sm space-y-1">
                 <li>• omegaUp open-source contributions (Vue, PHP, MySQL)</li>
-                <li>• StockTwits ML event extraction research</li>
+                <li>• ASTRA-IDE — self-scheduling cloud IDE (DRL + K8s)</li>
                 <li>• Competitive programming (LeetCode Knight 1858)</li>
               </ul>
             </div>
@@ -168,7 +168,7 @@ export const WhoAmI: React.FC = () => {
             <h4 className="text-terminal-accent font-bold mb-3">$ uptime</h4>
             <div className="text-terminal-text text-sm">
               <div>Contributor: <span className="text-terminal-accent">omegaUp (21 merged PRs)</span></div>
-              <div>Research: <span className="text-terminal-accent">StockTwits ML · Dr. Chakraborty</span></div>
+              <div>Research: <span className="text-terminal-accent">ASTRA-IDE · Cloud IDE + DRL</span></div>
               <div>Focus: <span className="text-terminal-accent">Backend + Applied ML</span></div>
               <div>Drive: <span className="text-terminal-accent">High-impact open-source</span></div>
             </div>
