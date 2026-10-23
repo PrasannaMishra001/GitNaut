@@ -1,117 +1,93 @@
 # Resume Update Guide
 
-Step-by-step instructions for updating the resume and syncing the PDF link everywhere.
+Source of truth for the resume is no longer this repo. It lives in:
+
+```
+C:\Users\mishr\Downloads\Prasanna_Mishra_Resume\
+  current\Prasanna_Mishra_Resume.tex   <- edit this (or the Overleaf copy)
+  current\iiitm.png                    <- logo used by the tex
+  current\build.sh                     <- builds both PDFs locally and checks 1 page
+  versions\                            <- every older PDF / tex, named by date
+  README.md                            <- version log
+```
+
+`main.tex`, `iiitm.png` and `resume.pdf` in this repo are copies of `current\`.
 
 ---
 
-## Step 1 — Edit the LaTeX Source on Overleaf
+## Step 1 — Edit and build
 
-1. Open your Overleaf project (share it from: [overleaf.com](https://overleaf.com))
-2. Make your edits in `main.tex`
-3. Click **Recompile** and verify the PDF looks correct
-4. Download the PDF: **Menu → Download PDF**
+**Overleaf:** upload `Prasanna_Mishra_Resume.tex` and `iiitm.png`, set the compiler to pdfLaTeX, recompile, download the PDF.
 
----
+**Locally (WSL has TeX Live installed):**
 
-## Step 2 — Upload the New PDF to Google Drive (keeping the same link)
+```powershell
+cd C:\Users\mishr\Downloads\Prasanna_Mishra_Resume\current
+wsl -d Ubuntu -- bash build.sh
+```
 
-> **Important:** Use "Manage versions" — this replaces the file content while keeping the same file ID and shareable link. No code changes needed.
+This writes `Prasanna_Mishra_Resume.pdf` (college logo) and `Prasanna_Mishra_Resume_ATS.pdf` (no logo), and fails if either is more than one page.
 
-1. Go to [drive.google.com](https://drive.google.com) and find your `Resume.pdf`
-2. Right-click it → **Manage versions**
-3. Click **Upload new version** → select your new PDF
-4. Done. The existing link (`https://drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3/view?usp=sharing`) now serves the new PDF automatically — **no link updates required**
-
-> Only proceed to Step 3 if you accidentally deleted the old file and uploaded a fresh one with a different Drive ID.
+Before replacing `current\`, copy the old PDF into `versions\pdf\` as `YYYY-MM-DD_<note>.pdf` and add a line to the README version log.
 
 ---
 
-## Step 3 — Update the Drive Link in This Repo
+## Step 2 — Upload the new PDF to Google Drive (same link)
 
-If you uploaded a **new file** (different Drive ID), update the link in these 5 places:
+Use **Manage versions** so the file ID and link stay the same:
 
-| File | Location | What to change |
-|------|----------|---------------|
-| `src/components/sections/WhoAmI.tsx` | Line ~40 | `href="https://drive.google.com/..."` |
-| `README.md` | Badge row near top | `?url=https://drive.google.com/...` |
+1. Open drive.google.com and find the resume PDF.
+2. Right-click → **Manage versions** → **Upload new version** → pick the new PDF.
 
-> If you replaced the same file on Drive (same link), skip this step.
+The link `https://drive.google.com/file/d/1azi86BgfU5daak5iSA-Z5VR6YqgsXRj3/view?usp=sharing` then serves the new PDF. No code changes are needed.
 
 ---
 
-## Step 4 — Update the Link in the Portfolio Site
+## Step 3 — Only if the Drive file ID changed
 
-File: `c:\Users\mishr\Downloads\prasannamishra\index.html`
+Update the link in:
 
-Locations:
-1. **Navbar** — `<a href="..." class="nav-resume">Resume</a>` (~line 27)
-2. **Hero section** — `<a href="..." class="resume-link">` (~line 65)
-
-Change the `href` in both places to the new Drive link.
-
----
-
-## Step 5 — Update the Link in the LaTeX Header
-
-File: `main.tex`
-
-The `\website` command is already set to the portfolio URL — **do not change this**.  
-The resume PDF link is **not** in the LaTeX header (by design, keeps it clean).
+| File | Where |
+|------|-------|
+| `GitNaut/src/components/sections/WhoAmI.tsx` | Resume line, ~line 130 |
+| `GitNaut/README.md` | resume badge near the top |
+| `D:\Study-Material\Sem 6\project\portfolio\prasannamishra\index.html` | navbar `nav-resume` (~line 27) and hero resume link (~line 80) |
 
 ---
 
-## Step 6 — Commit and Push Everything
+## Step 4 — Sync copies into this repo
+
+```powershell
+$c = "C:\Users\mishr\Downloads\Prasanna_Mishra_Resume\current"
+$g = "D:\Study-Material\Sem 6\project\portfolio\terminal-portfolio-main\GitNaut"
+Copy-Item "$c\Prasanna_Mishra_Resume.pdf" "$g\resume.pdf"
+Copy-Item "$c\Prasanna_Mishra_Resume.tex" "$g\main.tex"
+Copy-Item "$c\iiitm.png" "$g\iiitm.png"
+```
+
+---
+
+## Step 5 — Commit and push (by hand)
 
 ```bash
-# Push GitNaut repo
-cd "c:\Users\mishr\Downloads\terminal-portfolio-main\GitNaut"
-git add src/components/sections/WhoAmI.tsx README.md
-git commit -m "chore: update resume PDF link"
+cd "D:/Study-Material/Sem 6/project/portfolio/terminal-portfolio-main/GitNaut"
+git add resume.pdf main.tex iiitm.png README.md src/components/sections/WhoAmI.tsx
+git commit -m "chore: update resume"
 git push
 
-# Push portfolio site
-cd "c:\Users\mishr\Downloads\prasannamishra"
+cd "D:/Study-Material/Sem 6/project/portfolio/prasannamishra"
 git add index.html
-git commit -m "chore: update resume PDF link in navbar and hero"
+git commit -m "chore: update resume details"
 git push
 ```
 
 ---
 
-## Step 7 — Verify Live
+## Step 6 — Verify live
 
 | Site | URL |
 |------|-----|
-| GitNaut terminal | [git-naut.vercel.app](https://git-naut.vercel.app) |
-| Portfolio | [prasannamishra001.github.io/prasannamishra](https://prasannamishra001.github.io/prasannamishra/) |
+| GitNaut terminal | https://git-naut.vercel.app |
+| Portfolio | https://prasannamishra001.github.io/prasannamishra/ |
 
-Run `whoami` in GitNaut terminal and click the resume link to confirm it opens the correct PDF.
-
----
-
-## Files That Contain the Drive Link (Quick Reference)
-
-```
-GitNaut/src/components/sections/WhoAmI.tsx
-GitNaut/README.md
-prasannamishra/index.html  (×2: navbar + hero)
-```
-
----
-
-## AI Assistant Prompt (paste this when updating links)
-
-```
-I have a new resume PDF Drive link: https://drive.google.com/file/d/NEW_ID/view?usp=sharing
-
-Please update this link in:
-1. GitNaut/src/components/sections/WhoAmI.tsx — the href for the Resume line
-2. GitNaut/README.md — the resume badge URL
-3. prasannamishra/index.html — the nav-resume href (line ~27) and the hero resume-link href (line ~65)
-
-Replace the old link: https://drive.google.com/file/d/OLD_ID/view?usp=sharing
-```
-
----
-
-*Last updated: see git log*
+Run `whoami` in GitNaut and click the resume link.

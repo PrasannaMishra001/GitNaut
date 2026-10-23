@@ -1,203 +1,144 @@
+%-------------------------------------------------------------------------
+% Prasanna Mishra - Resume | Option B "Classic, ATS-tuned"
+% Same look as the Jun 2026 resume (logo, icons, education table, blue
+% links, bold highlights) with the parts ATS parsers trip on fixed.
+% Overleaf: upload this file + iiitm.png + leetcode.png, compiler = pdfLaTeX.
+%-------------------------------------------------------------------------
 \documentclass[a4paper,11pt]{article}
 
-% ----- PACKAGES -----
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
+% Text layer for ATS: real Unicode for every glyph, icons read as blanks.
+\input{glyphtounicode}
+\pdfglyphtounicode{phone}{0020}\pdfglyphtounicode{envelope}{0020}
+\pdfglyphtounicode{github}{0020}\pdfglyphtounicode{linkedin}{0020}
+\pdfglyphtounicode{globe}{0020}\pdfglyphtounicode{code}{0020}
+\pdfglyphtounicode{openbullet}{2022} % hollow bullet reads as a standard bullet
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = *}
+
+\usepackage[a4paper,top=0.35in,bottom=0.3in,left=0.45in,right=0.45in]{geometry}
 \usepackage{titlesec}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{graphicx} % Essential for \includegraphics
+\usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
-\usepackage{amsmath}
-\usepackage{fancyhdr}
+\usepackage{xcolor}
 \usepackage{tikz}
-\usepackage[pdftex]{hyperref} % Load hyperref last
+\usepackage{hyperref}
 
-% ----- COLOR & HYPERLINK DEFINITION -----
-\definecolor{linkblue}{rgb}{0.0, 0.2, 0.6} % A professional dark blue - Hex: #003399
-\hypersetup{
-    colorlinks=true, % Set to true for colored text links
-    linkcolor=linkblue,
-    urlcolor=linkblue,
-    pdfpagemode=FullScreen,
-}
+\definecolor{linkblue}{rgb}{0.0, 0.2, 0.6}
+\hypersetup{colorlinks=true, linkcolor=linkblue, urlcolor=linkblue,
+  pdftitle={Prasanna Mishra - Resume}, pdfauthor={Prasanna Mishra}}
 
-% ----- DOCUMENT LAYOUT -----
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\addtolength{\oddsidemargin}{-0.7in}
-\addtolength{\evensidemargin}{-0.4in}
-\addtolength{\textwidth}{1.4in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.2in}
-\urlstyle{rm}
-\raggedbottom
+\pagestyle{empty}
 \raggedright
+\setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0in}
+\urlstyle{same}
 
-% ----- NEW COLUMN TYPES FOR TABULARX -----
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 
-% ----- SECTION FORMATTING -----
-\titleformat{\section}{
-  \vspace{-16pt}\bfseries\MakeUppercase\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+\titleformat{\section}{\bfseries\MakeUppercase\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
 
-% ----- CUSTOM COMMANDS -----
-\newcommand{\codingLogo}[2]{\raisebox{-0.15ex}{\includegraphics[height=#2]{#1}}}
 \newcommand{\ExternalLink}{\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{\begin{scope}[x=1ex, y=1ex]\clip (-0.1,-0.1) --++ (-0, 1.2) --++ (0.6, 0) --++ (0, -0.6) --++ (0.6, 0) --++ (0, -1); \path[draw, line width = 0.5, rounded corners=0.5] (0,0) rectangle (1,1); \end{scope}\path[draw, line width = 0.5] (0.5, 0.5) -- (1, 1);\path[draw, line width = 0.5] (0.6, 1) -- (1, 1) -- (1, 0.6);}}
-\newcommand{\resumeSubheading}[4]{\item \begin{tabular*}{\dimexpr0.97\textwidth-\labelwidth}[t]{l@{\extracolsep{\fill}}r}\textbf{#1} & \textbf{#2} \\\textit{\small#3} & \textit{\small#4} \\\end{tabular*}\vspace{-6pt}}
-\newcommand{\resumeProject}[3]{\item \textbf{#1} \textit{(#2)} \hfill \footnotesize{#3}\vspace{-5pt}}
-\renewcommand{\labelitemii}{$\circ$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, labelsep=0.5em]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt,topsep=2pt,parsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-\newcommand{\achievementListStart}{\begin{itemize}[leftmargin=*, labelsep=0.5em, itemsep=1pt, topsep=2pt, parsep=0pt]}
-\newcommand{\achievementListEnd}{\end{itemize}}
-
-%-------------------------------------------
-%%%%%%  DEFINE YOUR DETAILS HERE  %%%%%%%
-\newcommand{\name}{Prasanna Mishra}
-\newcommand{\phone}{+91-9506287890}
-\newcommand{\emaila}{mishra.prasanna838@gmail.com}
-\newcommand{\github}{PrasannaMishra001}
-\newcommand{\linkedin}{prasanna-mishra-871269367}
-\newcommand{\website}{https://prasannamishra001.github.io/prasannamishra/}
-\newcommand{\leetcode}{Prasanna\_Mishra}
-\newcommand{\codechef}{prasannamishra}
-\newcommand{\codeforces}{prasanna\_mishra}
-%-------------------------------------------
+% \entry{Title}{Date}{Organisation}{Location}: plain lines, no table, no bullet
+\newcommand{\entry}[4]{\textbf{#1}\hfill\textbf{#2}\\\textit{\small #3}\hfill\textit{\small #4}\par}
+% \project{Name}{Stack}{Date | links}
+\newcommand{\project}[3]{\textbf{#1} \textit{\small(#2)}\hfill{\small #3}\par}
+\setlist[itemize]{itemsep=0.5pt,topsep=1pt,parsep=0pt,leftmargin=1.3em,label=$\circ$}
+\newcommand{\gap}{\vspace{4pt}}
 
 \begin{document}
 
 %----------HEADING-----------------
-\parbox{2.35cm}{%
-    \includegraphics[width=2.2cm,clip]{iiitm.png}
+\parbox{2.35cm}{\includegraphics[width=2.2cm]{iiitm.png}}
+\parbox{\dimexpr\linewidth-2.5cm\relax}{
+  \begin{tabularx}{\linewidth}{@{}L r@{}}
+    \textbf{\LARGE Prasanna Mishra} & Gwalior, India \\[3pt]
+    \href{tel:+919506287890}{\faPhone\ +91-9506287890} &
+      \href{mailto:mishra.prasanna838@gmail.com}{\faEnvelope\ mishra.prasanna838@gmail.com} \\
+    \href{https://github.com/PrasannaMishra001}{\faGithub\ github.com/PrasannaMishra001} &
+      \href{https://www.linkedin.com/in/prasanna-mishra-871269367/}{\faLinkedin\ linkedin.com/in/prasanna-mishra-871269367} \\
+    \href{https://leetcode.com/u/Prasanna_Mishra/}{\raisebox{-0.15ex}{\includegraphics[height=1.6ex]{leetcode.png}}\ leetcode.com/u/Prasanna\_Mishra} &
+      \href{https://prasannamishra001.github.io/prasannamishra/}{\faGlobe\ prasannamishra001.github.io/prasannamishra} \\
+  \end{tabularx}
 }
-\parbox{\dimexpr\linewidth-2.8cm\relax}{
-    \begin{tabularx}{\linewidth}{@{}L r@{}}
-      \multicolumn{2}{@{}l@{}}{\textbf{\LARGE \name}} \\[3pt]
-      \href{tel:+919506287890}{\faPhone\ \phone} &
-        \href{mailto:\emaila}{\faEnvelope\ \emaila} \\
-      \href{https://github.com/\github}{\faGithub\ \github} &
-        \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedin\ in/\linkedin} \\
-      \href{https://leetcode.com/u/Prasanna_Mishra}{\codingLogo{leetcode-logo.png}{1.6ex} LeetCode/\leetcode} &
-        \href{mailto:imt_2023059@iiitm.ac.in}{\faEnvelope\ imt\_2023059@iiitm.ac.in} \\
-      \href{https://codeforces.com/profile/prasanna_mishra}{\codingLogo{codeforces-logo.png}{1.6ex} Codeforces/\codeforces} &
-        \href{\website}{\faGlobe\ prasannamishra001.github.io/prasannamishra} \\
-    \end{tabularx}
-}
-\vspace{4pt}
 
 %-----------EDUCATION-----------------
 \section{Education}
-\setlength{\tabcolsep}{5pt}
-\small{\begin{tabularx}
-{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+{\setlength{\tabcolsep}{4pt}\small
+\begin{tabularx}{\dimexpr\textwidth-1mm\relax}{|>{\centering\arraybackslash}p{3.0cm}|C|c|c|}
   \hline
-  \textbf{Degree/Certificate} & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \textbf{Degree} & \textbf{Institution / Board} & \textbf{CGPA / \%} & \textbf{Year}\\
   \hline
-  Integrated B.Tech + M.Tech, IT & ABV-IIITM, Gwalior (INI) & 8.92 CGPA (9.21 SGPA) & 2023 -- 2028\\
+  Integrated B.Tech + M.Tech (IT) & Atal Bihari Vajpayee Indian Institute of Information Technology\newline and Management, Gwalior & 8.92 / 10 & 2023 -- 2028\\
   \hline
-  Senior Secondary (Class XII) & C.B.S.E Board & 96.67\% & 2023 \\
+  Class XII & CBSE & 96.67\% & 2023 \\
   \hline
-  Secondary (Class X) & C.B.S.E Board & 95.8\% & 2021 \\
+  Class X & CBSE & 95.8\% & 2021 \\
   \hline
-\end{tabularx}}
-\par\vspace{3pt}
-\small{\textit{JEE Mains 99th percentile $\vert$ Top 5 in batch $\vert$ MCM Scholarship recipient $\vert$ \href{https://drive.google.com/drive/folders/1S1DK5RQ554cfmcy-5H6tFfmkBwR3zL5v?usp=sharing}{Verified Gradesheets \ExternalLink}}}
+\end{tabularx}\par\vspace{2pt}
+\textit{Top 5 in batch $\vert$ JEE Main 99th percentile $\vert$ MCM Scholarship $\vert$ Reliance Foundation UG Scholar $\vert$ \href{https://drive.google.com/drive/folders/1S1DK5RQ554cfmcy-5H6tFfmkBwR3zL5v?usp=sharing}{Verified Gradesheets \ExternalLink}}\par}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-        {Open Source Contributor / Google Summer of Code 2026}
-        {Aug 2025 -- Present}
-        {\href{https://github.com/omegaup/omegaup}{omegaUp}: Online judge \& education platform (Vue 2, TypeScript, PHP 8.1, MySQL 8.0, Python)}
-        {Remote}
-        \resumeItemListStart
-            \item Selected for \textbf{Google Summer of Code 2026} \href{https://drive.google.com/file/d/1IvU8CoLtiptRZC3_CsNsfoSoWTJHl9D_/view?usp=sharing}{[Acceptance Letter \ExternalLink]} (May 2026 -- Present) for \textbf{CronJob Optimization}: refactoring and optimizing PHP cron scripts (ranking, feedback aggregation, scheduled automation) for reliability and scale.
-            \item Earlier contributions: shipped \href{https://github.com/omegaup/omegaup/pull/8794}{GitHub OAuth sign-in} (PHP controller, DB migration, Vue+TS, 25 files / +713 lines), \href{https://github.com/omegaup/omegaup/pull/8412}{human-readable contest dates} across Vue/TS/i18n (15 files / +544 lines), \href{https://github.com/omegaup/omegaup/pull/8959}{custom test-case discoverability} in the arena interface, and \href{https://github.com/omegaup/omegaup/pull/8599}{navbar dropdown refactor} (Bootstrap 4 + Vue reactivity); mentoring contributors with maintainer \href{https://github.com/pabo99}{@pabo99}. Stack: Docker, Kubernetes, Redis, Webpack, Jest, Cypress, PHPUnit.
-        \resumeItemListEnd
-    \resumeSubheading
-        {Project Intern}
-        {May 2024 -- Aug 2024}
-        {Advanced Materials Research Lab, ABV-IIITM}
-        {Gwalior, India}
-        \resumeItemListStart
-            \item Engineered a multi-sensor IoT device (Arduino) to monitor cattle health metrics (temperature, heart rate, ambient gas); built data pipeline transmitting readings via Wi-Fi/Bluetooth to Firebase \& Google Sheets, with a mobile app for visualization. \textit{Patent being filed.} \href{https://github.com/PrasannaMishra001/Cattle-Animal-Health-Tracking-System}{\faGithub}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\entry{Open Source Developer (Google Summer of Code)}{Aug 2025 -- Present}
+      {\href{https://github.com/omegaup/omegaup}{omegaUp}: online judge \& education platform (Vue, TypeScript, PHP 8.1, MySQL 8, Python)}{Remote}
+\begin{itemize}
+  \item Completed \textbf{Google Summer of Code 2026} (May -- Aug 2026) \href{https://drive.google.com/file/d/1IvU8CoLtiptRZC3_CsNsfoSoWTJHl9D_/view?usp=sharing}{[Acceptance Letter \ExternalLink]} \href{https://prasannamishra001.github.io/prasannamishra/gsoc/}{[Project Write-up \ExternalLink]}: built a \textbf{Cron Control Plane} for 5 production batch jobs, a shared Python runner with \textbf{MySQL advisory locks} blocking overlapping runs across hosts, per-phase telemetry and run history.
+  \item Shipped an \textbf{admin dashboard} (Vue.js, TypeScript, PHP REST APIs) for job health and failures, with a \textbf{secure rerun path}: the API only queues requests and an allow-listed dispatcher executes them.
+  \item Added \textbf{reliability guardrails}: in-transaction ranking checks that roll back anomalous results, publish gates that reject regressed ML models, and nightly health checks for 4 classes of broken problems.
+  \item \textbf{60 merged PRs} (40 since May 2026, +14K lines) incl. GitHub OAuth sign-in; wrote \textbf{82 Python unit tests}; collaborated with 2 mentors through design and code reviews.
+\end{itemize}
+\gap
+\entry{Project Intern}{May 2024 -- Aug 2024}
+      {Advanced Materials Research Lab, ABV-IIITM}{Gwalior, India}
+\begin{itemize}
+  \item Engineered a multi-sensor \textbf{IoT device} (Arduino, C++) monitoring cattle temperature, heart rate and gas levels; streamed readings over Wi-Fi/Bluetooth to Firebase and Google Sheets with a mobile dashboard.
+\end{itemize}
 
-\vspace{0.1pt}
 %-----------PROJECTS-----------------
 \section{Projects}
-\resumeSubHeadingListStart
-    \resumeProject{ASTRA-IDE: Self-Scheduling Cloud IDE}
-                 {Next.js 14, FastAPI, Docker, gVisor, Kubernetes, PyTorch, eBPF, Yjs}
-                 {May 2026 -- Present $\vert$ \href{https://astraide.tech}{\faGlobe} $\vert$ \href{https://github.com/PrasannaMishra001/astra-ide}{\faGithub}}
-    \resumeItemListStart
-        \item Production cloud IDE serving real per-workspace containers with adaptive runc/gVisor sandboxing; features a deep-RL (PPO) Kubernetes scheduler, eBPF telemetry, LSTM-based pre-warming, Karmada multi-cluster federation, and Yjs CRDT live collaboration. Live at astraide.tech with CI/CD via GitHub Actions and GHCR.
-    \resumeItemListEnd
-    \resumeProject{GitNaut x Portfolio}
-                 {React, TypeScript, Vite, Node.js, Tailwind CSS}
-                 {Jan 2026 -- Mar 2026 $\vert$ \href{https://git-naut.vercel.app/}{\faGlobe} $\vert$ \href{https://github.com/PrasannaMishra001/GitNaut}{\faGithub}}
-    \resumeItemListStart
-        \item Terminal-first GitHub intelligence desk: repo summaries, language breakdowns, contributor snapshots, PR analysis with SVG charts, file-tree inspection, interactive themes; matrix-rain animation, sound effects, autocomplete, full keyboard-driven UX.
-    \resumeItemListEnd
-    \resumeProject{ChurnAware: Sentiment-Aware Churn Prediction}
-                 {Python, Scikit-learn, Pandas, Streamlit}
-                 {Sep 2025 -- Nov 2025 $\vert$ \href{https://github.com/PrasannaMishra001/ChurnAware}{\faGithub}}
-    \resumeItemListStart
-        \item Implemented RFM (Recency-Frequency-Monetary) segmentation pipeline on Blinkit e-grocery dataset; built sentiment-aware churn prediction model combining customer behavioral signals with review sentiment analysis.
-    \resumeItemListEnd
-    \resumeProject{Einstein Contact Manager}
-                 {Next.js 15, FastAPI, PostgreSQL, Groq AI, Gemini OCR}
-                 {Nov 2024 -- Feb 2025 $\vert$ \href{https://einstein11.vercel.app/}{\faGlobe} $\vert$ \href{https://github.com/PrasannaMishra001/einstein-contact-manager}{\faGithub}}
-    \resumeItemListStart
-        \item Full-stack AI contact manager with NL search, smart dedup \& merge, business-card OCR, Google Contacts sync, CSV/vCard import-export, analytics dashboard; integrated Groq LLaMA 3.3-70B for natural-language search and Gemini 2.5 Flash for photo-to-contact OCR.
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
+\project{ASTRA-IDE: Self-Scheduling Cloud IDE}{Kubernetes, gVisor, eBPF, PyTorch}
+  {May 2026 -- Present $\vert$ \href{https://astraide.tech}{\faGlobe} \href{https://github.com/PrasannaMishra001/astra-ide}{\faGithub}}
+\begin{itemize}
+  \item Deployed a scalable cloud IDE with per-workspace containers and risk-based isolation (runc, gVisor or microVM) across \textbf{Kubernetes clusters in 3 regions}; Yjs live collaboration; CI/CD via GitHub Actions.
+  \item Cut cold starts \textbf{49.4\%} with LSTM pre-warming and emissions \textbf{40.7\%} with carbon-aware scheduling; syscall-graph intrusion detector reaches \textbf{F1 0.816} at 4\% FPR (first-author paper under review).
+\end{itemize}
+\gap
+\project{Einstein: Local-First AI Contact Manager}{Next.js, FastAPI, CRDT, WebRTC}
+  {Aug 2025 -- Present $\vert$ \href{https://iiitmgwalior.vercel.app/}{\faGlobe} \href{https://github.com/PrasannaMishra001/einstein-contact-manager}{\faGithub}}
+\begin{itemize}
+  \item Hand-rolled a \textbf{CRDT} (hybrid logical clocks, OR-Set) for offline, conflict-free peer-to-peer sync over WebRTC; prompt-engineered LLM features with JSON outputs: natural-language search and business-card OCR.
+\end{itemize}
+\gap
+\project{ChurnAware: Sentiment-Aware Churn Prediction}{Python, scikit-learn, PyTorch}
+  {Sep -- Nov 2025 $\vert$ \href{https://churn-aware.vercel.app}{\faGlobe} \href{https://github.com/PrasannaMishra001/ChurnAware}{\faGithub}}
+\begin{itemize}
+  \item GMM segmentation and a leakage-free temporal churn model with review sentiment on Blinkit e-grocery data, plus a Double-DQN engine recommending retention incentives.
+\end{itemize}
 
-\vspace{0.1pt}
 %-----------TECHNICAL SKILLS-----------------
 \section{Technical Skills}
-\begin{tabularx}{\textwidth}{@{}l X}
-  \textbf{Languages} & C++, Python, JavaScript, TypeScript, PHP 8.1, C, HTML/CSS, SCSS \\
-  \textbf{Frontend} & Vue.js 2, React, Next.js 15, Tailwind CSS, Bootstrap Vue, Monaco Editor, SCSS \\
-  \textbf{Backend} & PHP (MVC + Twig), Node.js, Express.js, FastAPI, Django \\
-  \textbf{Databases} & MySQL 8.0, MongoDB, PostgreSQL, Firebase, Redis \\
-  \textbf{ML / Data} & Scikit-learn, Pandas, NLP, Transformers, Streamlit, RFM Modelling \\
-  \textbf{Tools / Testing} & Docker, Kubernetes, Git, Linux, Webpack 5, RabbitMQ, Jest, Cypress, PHPUnit, Arduino \\
-\end{tabularx}
+{\small
+\textbf{Languages:} C++, Python, TypeScript, JavaScript, PHP, SQL, C, HTML/CSS\\
+\textbf{Backend \& Frontend:} REST APIs, FastAPI, Node.js, Express.js, React, Next.js, Vue.js, Tailwind CSS\\
+\textbf{Databases:} MySQL, PostgreSQL, MongoDB, Redis\\
+\textbf{Cloud \& DevOps:} Docker, Kubernetes, GitHub Actions (CI/CD), Linux, Git, PHPUnit, Jest, Cypress\\
+\textbf{AI/ML:} PyTorch, scikit-learn, Pandas, LLM APIs, prompt engineering, GitHub Copilot\\
+\textbf{Coursework:} Data Structures \& Algorithms, OOP, DBMS, Computer Networks, Software Engineering\par}
 
-\vspace{1pt}
-%-----------KEY COURSES TAKEN-----------------
-\section{Key Courses Taken}
-\small{Graph Theory \& Discrete Structures \textbf{(A)} $\vert$
-Database Systems \textbf{(A)} $\vert$
-Computer Organization \& Architecture \textbf{(A)} $\vert$
-Computer Networks \& Data Communications \textbf{(A)} $\vert$
-Hardware Workshop \textbf{(A)} $\vert$
-Object-Oriented Programming \textbf{(A)} $\vert$
-Design \& Analysis of Algorithms $\vert$
-Trustworthy AI}
-
-\vspace{1pt}
 %-----------ACHIEVEMENTS-----------------
 \section{Achievements}
-\achievementListStart
-    \item \textbf{Graduate Aptitude Test in Engineering (GATE) 2026:} Qualified. \href{https://drive.google.com/file/d/1xviVC4nlmYvs8vhjZj29ULsvqzMdc8ez/view?usp=sharing}{[Scorecard \ExternalLink]}
-    \item \textbf{Knight Badge, LeetCode}: Max Rating \textbf{1,868}; 550+ problems solved overall (450+ on LeetCode alone).
-    \item \textbf{Webkriti Hackathon Winner (2024):} 1st place in a 3-month full-stack web development competition at IIITM Gwalior.
-    \item \textbf{Merit-cum-Means (MCM) Scholarship:} Awarded by IIITM Gwalior for academic excellence.
-\achievementListEnd
+\begin{itemize}[label=\textbullet]
+  \item \textbf{LeetCode:} max contest rating \textbf{1,868} (top 8.5\%), 540+ problems solved.
+  \item \textbf{Webkriti 2024 Winner:} 1st place in a 3-month full-stack web development contest at IIITM Gwalior.
+  \item \textbf{GATE 2026 (CS):} qualified in 3rd year. \href{https://drive.google.com/file/d/1xviVC4nlmYvs8vhjZj29ULsvqzMdc8ez/view?usp=sharing}{[Scorecard \ExternalLink]}
+\end{itemize}
 
 \end{document}

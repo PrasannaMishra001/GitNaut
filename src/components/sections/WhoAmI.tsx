@@ -31,7 +31,7 @@ export const WhoAmI: React.FC = () => {
             <div className="space-y-4 text-terminal-text">
               <p>
                 Hi there! I'm Prasanna Mishra (<span className="text-terminal-accent">PrasannaMishra001</span>), 
-                a B.Tech CSE student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.92).
+                an Integrated B.Tech + M.Tech (IT) student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.92) and a Google Summer of Code 2026 contributor at omegaUp.
               </p>
               <p>
                 Open-source contributor to <span className="text-terminal-accent">omegaUp</span> with 
@@ -57,7 +57,7 @@ export const WhoAmI: React.FC = () => {
               <ul className="text-terminal-text text-sm space-y-1">
                 <li>• omegaUp open-source contributions (Vue, PHP, MySQL)</li>
                 <li>• ASTRA-IDE — self-scheduling cloud IDE (DRL + K8s)</li>
-                <li>• Competitive programming (LeetCode Knight 1858)</li>
+                <li>• Competitive programming (LeetCode max rating 1868)</li>
               </ul>
             </div>
 
@@ -94,7 +94,7 @@ export const WhoAmI: React.FC = () => {
               </h4>
               <ul className="text-terminal-text text-sm space-y-1">
                 <li>• GATE 2026 Qualified — CS & IT</li>
-                <li>• Knight on LeetCode (max rating 1858)</li>
+                <li>• LeetCode max contest rating 1868 (top 8.5%), 540+ solved</li>
                 <li>• National Science Congress Winner</li>
                 <li>• JEE Mains Qualified 2022</li>
               </ul>
