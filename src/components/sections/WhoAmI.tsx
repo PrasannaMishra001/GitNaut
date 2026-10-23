@@ -31,11 +31,11 @@ export const WhoAmI: React.FC = () => {
             <div className="space-y-4 text-terminal-text">
               <p>
                 Hi there! I'm Prasanna Mishra (<span className="text-terminal-accent">PrasannaMishra001</span>), 
-                an Integrated B.Tech + M.Tech (IT) student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.92) and a Google Summer of Code 2026 contributor at omegaUp.
+                an Integrated B.Tech + M.Tech (IT) student at <span className="text-terminal-accent">ABV-IIITM Gwalior</span> (CGPA 8.92) who completed Google Summer of Code 2026 with omegaUp.
               </p>
               <p>
                 Open-source contributor to <span className="text-terminal-accent">omegaUp</span> with 
-                <span className="text-terminal-success"> 21 merged PRs</span> spanning Vue.js, PHP, MySQL, TypeScript, Docker & CI/CD.
+                <span className="text-terminal-success"> 60 merged PRs</span> spanning Vue.js, PHP, MySQL, TypeScript, Docker & CI/CD.
               </p>
               <p>
                 Building <span className="text-terminal-accent">ASTRA-IDE</span> (astraide.tech) — a self-scheduling
@@ -167,7 +167,7 @@ export const WhoAmI: React.FC = () => {
           <div className="bg-terminal-hover p-4 rounded-lg border border-terminal-border">
             <h4 className="text-terminal-accent font-bold mb-3">$ uptime</h4>
             <div className="text-terminal-text text-sm">
-              <div>Contributor: <span className="text-terminal-accent">omegaUp (21 merged PRs)</span></div>
+              <div>Contributor: <span className="text-terminal-accent">omegaUp (60 merged PRs, GSoC 2026)</span></div>
               <div>Research: <span className="text-terminal-accent">ASTRA-IDE · Cloud IDE + DRL</span></div>
               <div>Focus: <span className="text-terminal-accent">Backend + Applied ML</span></div>
               <div>Drive: <span className="text-terminal-accent">High-impact open-source</span></div>

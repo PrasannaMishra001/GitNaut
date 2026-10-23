@@ -6,9 +6,8 @@ Source of truth for the resume is no longer this repo. It lives in:
 C:\Users\mishr\Downloads\Prasanna_Mishra_Resume\
   current\Prasanna_Mishra_Resume.tex   <- edit this (or the Overleaf copy)
   current\iiitm.png                    <- logo used by the tex
-  current\build.sh                     <- builds both PDFs locally and checks 1 page
-  versions\                            <- every older PDF / tex, named by date
-  README.md                            <- version log
+  current\build.sh                     <- builds the PDF, checks 1 page, copies it to Downloads\resume.pdf
+  KNOWLEDGE_BASE.md                    <- verified facts to draw on
 ```
 
 `main.tex`, `iiitm.png` and `resume.pdf` in this repo are copies of `current\`.
@@ -26,9 +25,7 @@ cd C:\Users\mishr\Downloads\Prasanna_Mishra_Resume\current
 wsl -d Ubuntu -- bash build.sh
 ```
 
-This writes `Prasanna_Mishra_Resume.pdf` (college logo) and `Prasanna_Mishra_Resume_ATS.pdf` (no logo), and fails if either is more than one page.
-
-Before replacing `current\`, copy the old PDF into `versions\pdf\` as `YYYY-MM-DD_<note>.pdf` and add a line to the README version log.
+This writes `Prasanna_Mishra_Resume.pdf` and `Downloads\resume.pdf`, and fails if the PDF is more than one page. Older versions live in this repo's git history.
 
 ---
 
@@ -71,7 +68,7 @@ Copy-Item "$c\iiitm.png" "$g\iiitm.png"
 
 ```bash
 cd "D:/Study-Material/Sem 6/project/portfolio/terminal-portfolio-main/GitNaut"
-git add resume.pdf main.tex iiitm.png README.md src/components/sections/WhoAmI.tsx
+git add resume.pdf main.tex
 git commit -m "chore: update resume"
 git push
 

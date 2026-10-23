@@ -91,7 +91,7 @@ export const Skills: React.FC = () => {
           <div className="text-terminal-muted text-sm">Technologies</div>
         </div>
         <div className="stat-card bg-terminal-hover p-4 rounded border border-terminal-border">
-          <div className="text-2xl font-bold text-terminal-accent">21</div>
+          <div className="text-2xl font-bold text-terminal-accent">60</div>
           <div className="text-terminal-muted text-sm">Merged PRs (omegaUp)</div>
         </div>
         <div className="stat-card bg-terminal-hover p-4 rounded border border-terminal-border">
